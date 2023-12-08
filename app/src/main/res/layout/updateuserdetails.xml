@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:paddingTop="110dp">
+
+        <SeekBar
+            android:id="@+id/update_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="2" />
+
+        <TextView
+            android:id="@+id/updateuserdetails_result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:text="Lose Weight"
+            android:textAlignment="center"
+            android:textColor="#F5FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Height (cm)"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:id="@+id/update_et_height"
+            android:layout_width="205dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="cm"
+            android:inputType="text"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/update_et_weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="kg"
+            android:inputType="text"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

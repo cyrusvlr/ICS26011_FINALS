@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/articles_bg_img"
+    tools:context=".ArticlesScreen">
+
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="573dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--First btn-->
+
+
+            <ImageButton
+                android:id="@+id/button_for_healthy_diet"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="A button for a healthy diet."
+                app:srcCompat="@drawable/scrollview_diet_img" />
+
+            <TextView
+                android:id="@+id/textOverlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_for_healthy_diet"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="A healthy diet by Harvard"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+            <!--Second btn-->
+
+            <ImageButton
+                android:id="@+id/button_for_posture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_for_healthy_diet"
+                android:layout_marginTop="33dp"
+                android:contentDescription="button for posture."
+                app:srcCompat="@drawable/scrollview_posture_img" />
+
+            <!--third btn-->
+
+            <TextView
+                android:id="@+id/textOverlay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_for_posture"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="Workout postures by Diane Rellinger"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!--button 3-->
+            <ImageButton
+                android:id="@+id/button_for_simple_exercises"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_for_posture"
+                android:layout_marginTop="50dp"
+                android:contentDescription="button for posture."
+                app:srcCompat="@drawable/scrollview_walking_img" />
+
+            <TextView
+                android:id="@+id/textOverlay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_for_simple_exercises"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-5dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="Workout postures by Diane Rellinger"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!--button 4-->
+            <ImageButton
+                android:id="@+id/button_for_weightlifting"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_for_simple_exercises"
+                android:layout_marginTop="50dp"
+                android:contentDescription="button for posture."
+                app:srcCompat="@drawable/scrollview_lifting_img" />
+
+            <TextView
+                android:id="@+id/textOverlay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_for_weightlifting"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="How to start lifting by Healthline"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

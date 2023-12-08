@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/archivo_black</item>
+        <item>@font/black_han_sans</item>
+        <item>@font/dela_gothic_one</item>
+        <item>@font/goldman_bold</item>
+        <item>@font/inter</item>
+        <item>@font/inter_bold</item>
+        <item>@font/lexend</item>
+        <item>@font/lexend_bold</item>
+        <item>@font/palanquin_dark_bold</item>
+    </array>
+</resources>

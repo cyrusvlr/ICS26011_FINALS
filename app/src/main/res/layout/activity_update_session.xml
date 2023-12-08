@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/session_bg_img"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateSessionActivity">
+
+    <TextView
+        android:id="@+id/updateSessionHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="Edit Session"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/updateNameEditText"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/updateSessionHeading"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:fontFamily="@font/lexend_bold"
+        android:hint="Session name"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#AAAAAAAA"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateNameEditText"
+        android:orientation="horizontal"
+        android:paddingTop="40sp">
+
+        <EditText
+            android:id="@+id/updateStartTimeEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lexend"
+            android:hint="Start Time"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="#AAAAAAAA"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/session_line_img" />
+
+        <EditText
+            android:id="@+id/updateEndTimeEditText"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/startTimeEditText"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lexend"
+            android:hint="End Time"
+            android:textColor="@color/white"
+            android:textColorHint="#AAAAAAAA"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="370dp"
+        android:layout_height="436dp"
+        android:layout_below="@+id/time_layout"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="Enter your exercises here"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#AAAAAAAA"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/updateSaveButton"
+        android:layout_width="118dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/updateContentEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-14dp"
+        android:backgroundTint="#D62828"
+        android:fontFamily="@font/lexend"
+        android:text="Update" />
+
+
+</RelativeLayout>
