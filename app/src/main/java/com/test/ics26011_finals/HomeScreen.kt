@@ -28,4 +28,9 @@ class HomeScreen : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun toSuggestionsScreen(view: View) {
+        val i = Intent(this, Suggestions::class.java)
+        startActivity(i)
+    }
+
 }

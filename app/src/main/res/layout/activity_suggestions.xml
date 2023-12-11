@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/articles_bg_img_sugg"
+    tools:context=".Suggestions">
+
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="573dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--First btn-->
+
+
+            <ImageButton
+                android:id="@+id/button_plan1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/sugg_img1" />
+
+            <TextView
+                android:id="@+id/textOverlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_plan1"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="4 Day Maximum Mass Workout"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+            <!--Second btn-->
+
+            <ImageButton
+                android:id="@+id/button_plan2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_plan1"
+                android:layout_marginTop="33dp"
+                app:srcCompat="@drawable/sugg_img2" />
+
+            <!--third btn-->
+
+            <TextView
+                android:id="@+id/textOverlay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_plan2"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="Dumbbell Only Full Body Workout"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!--button 3-->
+            <ImageButton
+                android:id="@+id/button_plan3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_plan2"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/sugg_img3" />
+
+            <TextView
+                android:id="@+id/textOverlay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_plan3"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-5dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="3 Day Full Body Women's Dumbbell Only"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!--button 4-->
+            <ImageButton
+                android:id="@+id/button_plan4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/button_plan3"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/sugg_img4" />
+
+            <TextView
+                android:id="@+id/textOverlay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_plan4"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:fontFamily="@font/lexend_bold"
+                android:padding="8dp"
+                android:text="8 Week Beginner Fat Loss Workout for Women"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
